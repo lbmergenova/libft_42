@@ -35,8 +35,8 @@ $(NAME):	$(OBJS) libft.h
 
 all:		$(NAME)
 
-bonus:		$(OBJS) $(B_OBJS) libft.h
-			ar rcs $(NAME) $?
+bonus:		$(B_OBJS)	
+			@make OBJS="$(B_OBJS)" all 
 			
 
 clean:
